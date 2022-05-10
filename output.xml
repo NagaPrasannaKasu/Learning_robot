@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 16:20:42.139" rpa="false" schemaversion="3">
+<suite id="s1" name="Hallo" source="C:\Users\nagaprasanna.kasu\Documents\Practice_Robotframework_Selenium\practice_robot\Hallo.robot">
+<test id="s1-t1" name="Open CGI Intranet page" line="32">
+<kw name="Open Browser to CGI Intranet Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220510 16:20:42.560" level="INFO">Opening browser 'Edge' to base url 'https://intranet.ent.cgi.com/'.</msg>
+<status status="PASS" starttime="20220510 16:20:42.560" endtime="20220510 16:20:50.334"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220510 16:20:50.335" endtime="20220510 16:20:50.464"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${Title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220510 16:20:50.474" level="INFO">Page title is 'Home | CGI Intranet'.</msg>
+<status status="PASS" starttime="20220510 16:20:50.464" endtime="20220510 16:20:50.474"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220510 16:20:50.474" endtime="20220510 16:20:53.662"/>
+</kw>
+<status status="PASS" starttime="20220510 16:20:42.559" endtime="20220510 16:20:53.662"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220510 16:20:53.663" endtime="20220510 16:20:56.870"/>
+</kw>
+<status status="PASS" starttime="20220510 16:20:42.558" endtime="20220510 16:20:56.871"/>
+</test>
+<test id="s1-t2" name="Edit CGI Intranet Profile page" line="37">
+<kw name="Open Browser to CGI Intranet Page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220510 16:20:56.880" level="INFO">Opening browser 'Edge' to base url 'https://intranet.ent.cgi.com/'.</msg>
+<status status="PASS" starttime="20220510 16:20:56.879" endtime="20220510 16:21:11.288"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220510 16:21:11.289" endtime="20220510 16:21:11.434"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>${Title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220510 16:21:11.446" level="INFO">Page title is 'Home | CGI Intranet'.</msg>
+<status status="PASS" starttime="20220510 16:21:11.434" endtime="20220510 16:21:11.446"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Text}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220510 16:21:11.447" endtime="20220510 16:21:11.472"/>
+</kw>
+<status status="PASS" starttime="20220510 16:20:56.877" endtime="20220510 16:21:11.473"/>
+</kw>
+<kw name="Edit Profile Page">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${Profile-URL}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220510 16:21:11.475" level="INFO">Clicking link 'https://intranet.ent.cgi.com/pages/MyProfile.aspx'.</msg>
+<status status="PASS" starttime="20220510 16:21:11.474" endtime="20220510 16:21:13.067"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${Text2}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220510 16:21:13.067" endtime="20220510 16:21:13.083"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>partiallink=Edit Profile</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220510 16:21:13.083" level="INFO">Clicking link 'partiallink=Edit Profile'.</msg>
+<status status="PASS" starttime="20220510 16:21:13.083" endtime="20220510 16:21:18.137"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>partiallink=Save Changes</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220510 16:21:18.137" endtime="20220510 16:21:18.199"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>partiallink=Cancel</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220510 16:21:18.199" endtime="20220510 16:21:18.262"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>partiallink=Cancel</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220510 16:21:18.262" level="INFO">Clicking link 'partiallink=Cancel'.</msg>
+<status status="PASS" starttime="20220510 16:21:18.262" endtime="20220510 16:21:20.500"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>partiallink=Edit Profile</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220510 16:21:20.500" endtime="20220510 16:21:20.565"/>
+</kw>
+<status status="PASS" starttime="20220510 16:21:11.474" endtime="20220510 16:21:20.565"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220510 16:21:20.566" endtime="20220510 16:21:24.140"/>
+</kw>
+<status status="PASS" starttime="20220510 16:20:56.875" endtime="20220510 16:21:24.142"/>
+</test>
+<doc>Practice using Selenium Library</doc>
+<status status="PASS" starttime="20220510 16:20:42.155" endtime="20220510 16:21:24.146"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Hallo">Hallo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
